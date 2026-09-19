@@ -5,4 +5,5 @@ PNG exports for Chrome. `copy.png` is a matching compatibility export.
 
 ## Inter typography
 `inter-var.woff2` is bundled locally so the toolbar and settings do not require a
-remote font request.
+remote font request. It is distributed under the SIL Open Font License in
+`OFL.txt`.
