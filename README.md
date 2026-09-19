@@ -13,7 +13,8 @@ Smart Paste is currently distributed as an unpacked extension:
 2. Open `chrome://extensions` in Chrome.
 3. Enable **Developer mode**.
 4. Choose **Load unpacked** and select the repository folder.
-5. Open Smart Paste settings, add a TypeSafe API key, enable matching, and save.
+5. Open Smart Paste settings, add a [TypeSafe](https://typesafe.ai) API key,
+   enable matching, and save.
 
 Reload any tabs that were open before installing or updating the extension.
 Chrome internal pages, extension pages, and built-in PDF viewers do not allow
@@ -43,7 +44,8 @@ and some rich-text editors are not currently supported.
 ## Data and privacy
 
 When matching is enabled, Smart Paste sends the pasted text and limited form
-context to TypeSafe: the form heading, field labels and types, and whether fields
+context to [TypeSafe](https://typesafe.ai): the form heading, field labels and
+types, and whether fields
 are focused or already occupied. Existing field values are not sent.
 
 The API key is stored in Chrome extension storage. Captured text is kept in
