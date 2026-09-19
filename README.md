@@ -1,9 +1,9 @@
 # Smart Paste
 
-Smart Paste is an experimental Chrome extension that matches text from your
-clipboard to relevant fields in a web form. Copy a block of text, focus a field,
-and press paste once. Smart Paste extracts confident matches, fills supported
-fields, and lets you undo the result.
+Smart Paste is an experimental Chrome extension that matches text you explicitly
+paste to supported fields in a web form. When you press paste, it splits the text
+into candidate passages, reads the form's field labels and context, and inserts
+only verified, confident matches. You can undo the result.
 
 ## Install
 
@@ -32,7 +32,7 @@ also open it from the extension button. Smart Paste does not submit forms.
 
 ## Supported fields
 
-Smart Paste supports visible text, email, telephone, URL, textarea, and basic
+Smart Paste supports standard visible text, email, telephone, URL, textarea, and basic
 contenteditable fields in the top-level page. It can match up to eight fields in
 the focused form, dialog, or fieldset while preserving fields that already contain
 text.
@@ -81,3 +81,8 @@ Network transport and model responses are mocked in tests.
 
 Smart Paste is experimental software and is not affiliated with the websites on
 which it is used.
+
+## License
+
+Smart Paste is available under the [MIT License](LICENSE). The bundled Inter font
+is distributed separately under the [SIL Open Font License](assets/OFL.txt).
