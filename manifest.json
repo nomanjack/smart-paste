@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Paste",
+  "version": "0.4.9",
+  "description": "Capture clipboard text, match supported form fields, paste and undo.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.typesafe.ai/*"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "action": {
+    "default_title": "Show Smart Paste",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+J",
+        "mac": "Command+J"
+      }
+    }
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "core.js",
+        "adapters.js",
+        "shared-ui.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/copy.png",
+        "assets/inter-var.woff2",
+        "assets/copy.svg"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ]
+}

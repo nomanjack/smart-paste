@@ -1,0 +1,5 @@
+/* Chrome sizes action popups from the document: avoid viewport-based feedback. */
+html,body{box-sizing:border-box;width:360px;min-width:360px;margin:0;padding:0;background:#fff}
+body{min-height:142px}
+#app{width:360px}
+#app .sp-settings.sp-capture{box-sizing:border-box;width:360px;max-width:none}
